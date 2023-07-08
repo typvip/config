@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 80
+spring:
+  application:
+    name: "正式环境"
+  profiles: prod
+---
+server:
+  port: 8080
+spring:
+  application:
+    name: "开发环境"
+  profiles: dev
