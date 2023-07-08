@@ -7,12 +7,12 @@ server:
   port: 80
 spring:
   application:
-    name: "正式环境"
+    name: "prod-config-service"
   profiles: prod
 ---
 server:
   port: 8080
 spring:
   application:
-    name: "开发环境"
+    name: "dev-config-service"
   profiles: dev
